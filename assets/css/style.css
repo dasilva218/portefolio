@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width: 100vw;
+	height: 100vh;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 15px;
+	background-color: #000;
+	color: #fff;	
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+/*menu principal*/
+#main{
+	background: #1E221C;
+	width: 80%;
+	height: 470px;
+	margin: 8% auto;
+	display: flex;
+	align-items: center;
+	perspective: 470px;
+	transform-style: preserve-3d;
+}
+/* item menu*/
+#menu {
+	height: 470px;
+	flex-basis: 8%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/*menu hamburger*/
+#sech{
+	background-color: #0EDB12;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.span{
+	display: inline-block;
+	width: 28%;
+	height: 3px;
+	background: #000;
+	margin: 2px;
+}
+/*menu hamburger*/
+#nav{
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+}
+#nav ul li{
+	list-style-type: none;
+	margin: 40px 0;
+}
+
+/* item image*/
+#image {
+	height: 520px;
+	align-self: center;
+	flex-basis: 30%;
+	flex-grow: 0;
+	background-image: url(../img/40044425_1328643217272223_4635914736397975552_n.jpg);
+	background-repeat: no-repeat;
+	background-position: -127px 0px;
+	background-size: cover;
+	box-shadow: 5px 0px 10px #000;
+	position: relative;
+}
+#nom{
+	line-height: 30px;
+	width: 100%;
+	position: absolute;
+	bottom: 7rem;
+}
+#nom div h1{
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 0px 0px 20px #000;
+}
+#nom div h2{
+	color: #2DDD72;
+	font-size: 0.9em;
+	text-transform: capitalize;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 0px 0px 30px #000;
+}
+
+/* item apropos*/
+#about {
+	height: 470px;
+	flex-basis: 70%;
+	flex-grow: 0;
+}
